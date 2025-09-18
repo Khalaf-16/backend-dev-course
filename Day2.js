@@ -7,7 +7,7 @@
 // Data Types : 1. Int/Number  2. boolean  3. string/varchar  4. undefined  5. null
 // Data Structures : 1. Array  2. Object
 
-// Variables:
+// Variables:3
 // Variables are containers used to store data types or structures. let and const are used to declare variables
 // let is used for variables that can change, const is used for variables that won't change
 // var is old way of declaring variables, avoid using it
