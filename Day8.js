@@ -10,7 +10,13 @@ if(amount % 10 == '0' && amount <= balance){
     }
     else{
         balance = balance - (amount + 1)
+        if(amount == ''){
+            console.log("empty, transaction not successful!")
+        }
+        else{
+        console.log("You have withdrawn " + "$" + (amount + 1))
         console.log("Your remaining balance is " + "$" + balance)
+        }
     }
 }
 else if(amount > balance){
@@ -18,11 +24,21 @@ else if(amount > balance){
     console.log("Your balance is 5000000")
 }
 else if(amount % 10 !== '0'){
-    console.log("Please make sure you withdraw a multiple of 10")
+    let roundDown = amount - (amount % 10)
+    console.log("Amount has been rounded down to " + "$" + roundDown)
+    balance = balance - (amount + 1)
+    if(amount == ''){
+            console.log("empty, transaction not successful!")
+        }
+        else{
+        console.log("You have withdrawn " + "$" + (amount + 1))
+        console.log("Your remaining balance is " + "$" + balance)
+        }
 }
 else {
     console.log("Not a number,please enter a correct number")
 }
+
 
 // Question 2
 
@@ -53,31 +69,22 @@ let player1 = prompt("Player1, Choose between rock, paper, scissors").toLowerCas
 let player2 = prompt("Player2, Choose between rock, paper, scissors").toLowerCase().trim()
 
 switch(true){
-    case player1 == player2:
-        console.log("draw, play again")
-        break;
-    case player1 == "r" && player2 == "s":
-        console.log("player1 wins")
-        break;
-    case player1 == "s" && player2 == "p":
-        console.log("player1 wins")
-        break;
-    case player1 == "p" && player2 == "r":
-        console.log("player1 wins")
-        break;
-    case player1 == "r" && player2 == "p":
-        console.log("player2 wins")
-        break;
-    case player1 == "p" && player2 == "s":
-        console.log("player2 wins")
-        break;
-    case player1 == "s" && player2 == "r":
-        console.log("player2 wins")
-        break;
+    case player1 === player2:
+    console.log("Draw, play again");
+    break;
+    case (player1 === "r" && player2 === "s") ||
+       (player1 === "s" && player2 === "p") ||
+       (player1 === "p" && player2 === "r"):
+    console.log("Player 1 wins");
+    break;
+    case (player2 === "r" && player1 === "s") ||
+       (player2 === "s" && player1 === "p") ||
+       (player2 === "p" && player1 === "r"):
+    console.log("Player 2 wins");
+    break;
     default:
         console.log("Choose between r-rock, p-paper, s-scissors")
-}
-
+}        
 // Question 4
 
 let yourAge = Number(prompt("Enter your age to know your category"))
