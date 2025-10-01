@@ -49,7 +49,7 @@ console.log(paddedStart); // 005
 let paddedEnd = string7.padEnd(3, "0");
 console.log(paddedEnd); // 500
 // Exercise
-let sentence = "JavaScript  Can be Fun But Not Everytime"
+let sentence = "JavaScript Can be Fun But Not Everytime"
  
  let firstSpace = sentence.indexOf(" ");
  let firstWord = sentence.substring(0, firstSpace)
