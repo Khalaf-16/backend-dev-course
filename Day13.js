@@ -12,13 +12,13 @@
 // 6. slice() - returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included).
     // syntax: array.slice(start, end)
     // example:
-    // let arr = [1, 2, 3, 4, 5];
+    // let arr = [1, 2, 3, 4, 5]
     // let newArr = arr.slice(1, 4); // newArr will be [2, 3, 4]
 // 7. splice() - changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
     // syntax: array.splice(start, deleteCount, item1, item2, ...)
     // example:
-    // let arr = [1, 2, 3, 4, 5];
-    // arr.splice(2, 1, 'a', 'b'); // arr will be [1, 2, 'a', 'b', 4, 5]
+    // let arr = [1, 2, 3, 4, 5]
+    // arr.splice(2, 1, 'a', 'b') // arr will be [1, 2, 'a', 'b', 4, 5]
 // 8. includes() - determines whether an array includes a certain value among its entries, returning true or false as appropriate.
     // syntax: array.includes(valueToFind, fromIndex)
 // 9. join() - joins all elements of an array into a string and returns this string.
