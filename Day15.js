@@ -19,7 +19,7 @@
 // Sorting:
 // let daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
-// 1. daysOfTheWeek.sort(); // sorts the array in ascending order (alphabetically for strings)
+// 1. daysOfTheWeek.sort(); // this sorts the array in ascending order (alphabetically for strings)
 // results: ["Friday", "Monday", "Saturday", "Sunday", "Thursday", "Tuesday", "Wednesday"]
 
 // 2. daysOfTheWeek.sort((a, b)=>{
